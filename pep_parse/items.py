@@ -7,8 +7,11 @@ import scrapy
 
 
 class PepParseItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+    """
+    Класс элемента для хранения данных PEP.
+
+    Этот класс определяет поля для собираемых элементов PEP.
+    """
     number = scrapy.Field()
     name = scrapy.Field()
     status = scrapy.Field()
